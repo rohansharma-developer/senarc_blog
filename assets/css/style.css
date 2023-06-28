@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.2s ease-in-out;
+}
+body {
+    background-color: #1e1e1f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+.navbar {
+    position: relative;
+    width: 95%;
+    height: 40px;
+    background-color: #9b989865;
+    border: 1px solid #eeeeee43;
+    border-radius: 10px;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+}
+.settings-section {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px;
+    display: flex;
+}
+.settings {
+    background-color: #76767b73;
+    padding: 5px;
+    border-radius: 10px;
+    color: #d1d0d0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.settings:hover {
+    background-color: #a9a9ab73;
+}
+.container {
+    position: absolute;
+    width: 95%;
+    height: 88%;
+    background-color: #24232365;
+    border: 1px solid #eeeeee43;
+    border-radius: 10px 10px 0 0;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+}
+.sidebar {
+    width: 20%;
+    height: 100%;
+    background-color: #1f1e1e;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+#home {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    top: 4%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translateX(-50%);
+}
+::-webkit-scrollbar {
+    background-color: #1e1e1f;
+    width: 10px;
+}
+::-webkit-scrollbar-button {
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #56535377;
+    border-radius: 10px;
+}
+.home_logo {
+    width: 75px;
+    height: 60px;
+}
+.home_logo img {
+    width: 100%;
+    height: 100%;
+    background-color: #9b989865;
+    border: 1px solid #eeeeee43;
+    padding: 5px;
+    border-radius: 10px;
+}
+.home_text {
+    width: 100%;
+}
+.sidebar-spacer {
+    margin: 30% 0;
+}
+.home_title {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#home:hover {
+    background-color: #9b989865;
+    border: 1px solid #eeeeee43;
+}
+#home:hover .home_logo img {
+    background-color: transparent;
+    border: 0;
+}
+.sidebar_title {
+    margin: 10%;
+    padding: 0 5%;
+    color: #a4a4a4;
+    font-size: 13px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+.sidebar_btn {
+    margin: 3% 10%;
+    padding: 3%;
+    border-radius: 10px;
+}
+.sidebar_btn.btn_active {
+    background-color: #9b989865;
+    border: 1px solid #eeeeee43;
+}
+.side_icon {
+    margin: 0 3%;
+}
